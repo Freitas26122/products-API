@@ -3,7 +3,6 @@ using ProductsAPI.Domain.Commands;
 using ProductsAPI.Domain.Utils;
 using ProductsAPI.Domain.Queries;
 using ProductsAPI.Domain.Listeners;
-using ProductsAPI.Core.Filters;
 using Dapper;
 using Microsoft.AspNetCore.Mvc.Versioning.Conventions;
 using Microsoft.OpenApi.Models;
@@ -40,7 +39,6 @@ builder.Services.AddScoped<ListenersHandler>(provider =>
     var secretKey = builder.Configuration.GetValue<string>(Keys.ACCESS_TOKEN_SIGNATURE);
     return new ListenersHandler(secretKey);
 });
-builder.Services.AddScoped<ValidateTokenFilter>();
 builder.Services.AddScoped<CommandsHandler>();
 builder.Services.AddScoped<QueriesHandler>();
 
