@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using EducaPlayAPI.Domain.Commands;
-using EducaPlayAPI.Domain.Listeners;
-using EducaPlayAPI.Domain.Utils;
+using ProductsAPI.Domain.Commands;
+using ProductsAPI.Domain.Listeners;
+using ProductsAPI.Domain.Utils;
 
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public interface ICommand
     {

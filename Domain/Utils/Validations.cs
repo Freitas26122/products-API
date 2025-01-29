@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public static class Validations
     {

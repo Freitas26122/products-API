@@ -2,7 +2,7 @@ using System;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public static class Extensions
     {

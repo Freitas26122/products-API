@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
 
-namespace EducaPlayAPI.Domain.Queries
+namespace ProductsAPI.Domain.Queries
 {
     public class QueriesDbContext(DbContextOptions<QueriesDbContext> options) : DbContext(options)
     {

@@ -1,7 +1,7 @@
-using EducaPlayAPI.Domain.Commands;
-using EducaPlayAPI.Domain.Utils;
+using ProductsAPI.Domain.Commands;
+using ProductsAPI.Domain.Utils;
 
-namespace EducaPlayAPI.Domain.Listeners
+namespace ProductsAPI.Domain.Listeners
 {
     public class EventListener(string id, EventListenerType type, Func<CommandsHandler, EventListenerType, ICommand, CommandResult, Task> method = null)
     {

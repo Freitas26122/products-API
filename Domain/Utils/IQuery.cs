@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using EducaPlayAPI.Domain.Queries;
+using ProductsAPI.Domain.Queries;
 
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public interface IQuery
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace EducaPlayAPI.Domain.Listeners
+namespace ProductsAPI.Domain.Listeners
 {
     // Caso queira adicionar um listener novo, é só ir acrescentando no enum!
     [Flags]

@@ -1,6 +1,6 @@
 using System;
 
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public class RequestData
     {

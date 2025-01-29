@@ -1,4 +1,4 @@
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public class CommandData(string command, dynamic data)
     {

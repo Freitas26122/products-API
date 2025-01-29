@@ -1,7 +1,7 @@
 using System;
 using System.Threading;
 
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public static class StaticRandom
     {

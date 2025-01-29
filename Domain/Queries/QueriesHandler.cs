@@ -1,9 +1,9 @@
 using System.Collections.Concurrent;
 using System.Reflection;
-using EducaPlayAPI.Domain.Utils;
+using ProductsAPI.Domain.Utils;
 using Newtonsoft.Json.Linq;
 
-namespace EducaPlayAPI.Domain.Queries
+namespace ProductsAPI.Domain.Queries
 {
     public class QueriesHandler
     {

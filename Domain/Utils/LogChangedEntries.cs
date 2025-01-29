@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public class LogChangedEntry
     {

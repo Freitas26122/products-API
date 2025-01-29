@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public static class RandomId
     {

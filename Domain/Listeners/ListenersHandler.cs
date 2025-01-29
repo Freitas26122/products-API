@@ -4,11 +4,11 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EducaPlayAPI.Domain.Commands;
-using EducaPlayAPI.Domain.Utils;
+using ProductsAPI.Domain.Commands;
+using ProductsAPI.Domain.Utils;
 using Microsoft.IdentityModel.Tokens;
 
-namespace EducaPlayAPI.Domain.Listeners
+namespace ProductsAPI.Domain.Listeners
 {
     public class ListenersHandler
     {

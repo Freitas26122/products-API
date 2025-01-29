@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace EducaPlayAPI.Domain.Utils
+namespace ProductsAPI.Domain.Utils
 {
     public class CommandResult
     {
