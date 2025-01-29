@@ -4,7 +4,7 @@ using ProductsAPI.Domain.Utils;
 
 namespace ProductsAPI.Domain.Commands.Products
 {
-    public class DeleteProductCommand : ICommand
+    public class RemoveProductCommand : ICommand
     {
         public required string Id { get; set; }
 
