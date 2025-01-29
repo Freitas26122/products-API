@@ -1,7 +1,5 @@
-using System.Threading.Tasks;
 using ProductsAPI.Domain.Commands;
 using ProductsAPI.Domain.Listeners;
-using ProductsAPI.Domain.Utils;
 
 namespace ProductsAPI.Domain.Utils
 {

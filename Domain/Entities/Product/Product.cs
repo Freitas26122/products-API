@@ -15,8 +15,7 @@ namespace ProductsAPI.Domain.Entities.Class
             string name,
             string description,
             decimal price,
-            int stockQuantity,
-            DateTime createdAt
+            int stockQuantity
         )
         {
             Id = RandomId.New();
@@ -24,7 +23,7 @@ namespace ProductsAPI.Domain.Entities.Class
             Description = description;
             Price = price;
             StockQuantity = stockQuantity;
-            CreatedAt = createdAt;
+            CreatedAt = DateTime.Now;
         }
     }
 }
