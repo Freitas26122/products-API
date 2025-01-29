@@ -9,11 +9,15 @@ namespace ProductsAPI.Domain.Queries.Products.GetAllProductsQuery
         public override async Task<QueryResult<ProductViewModel>> ExecuteAsync(QueriesHandler queriesHandler)
         {
             var sql = @"
-                SELECT
-                    [o].[id],
-                    [o].[name],
-                    [o].[description]
-                FROM [dbo].[organizer] [o] WITH(NOLOCK)
+                    SELECT 
+                        [p].[id],
+                        [p].[name],
+                        [p].[description],
+                        [p].[price],
+                        [p].[stock_quantity],
+                        [p].[created_at]
+                    FROM [dbo].[products] [p] WITH(NOLOCK)
+                    WHERE [p].[removed] = 0
                 ";
 
             using (var connection = queriesHandler.QueriesDbContext.Database.GetDbConnection())

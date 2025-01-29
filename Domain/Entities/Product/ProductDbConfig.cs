@@ -12,34 +12,35 @@ namespace ProductsAPI.Domain.Entities.Product
 
             builder.HasKey(p => p.Id);
             builder.Property(p => p.Id)
-                .HasColumnName("product_id")
-                .HasColumnType("int")
+                .HasColumnName("id")
+                .HasColumnType("CHAR(8)")
+                .HasDefaultValueSql("[dbo].[new_id]()")
                 .IsRequired();
 
             builder.Property(p => p.Name)
                 .HasColumnName("name")
-                .HasColumnType("nvarchar(100)")
-                .HasMaxLength(100)
+                .HasColumnType("NVARCHAR(200)")
+                .HasMaxLength(200)
                 .IsRequired();
 
             builder.Property(p => p.Description)
                 .HasColumnName("description")
-                .HasColumnType("text")
+                .HasColumnType("NVARCHAR(max)")
                 .IsRequired();
 
             builder.Property(p => p.Price)
                 .HasColumnName("price")
-                .HasColumnType("decimal(18,2)")
+                .HasColumnType("DECIMAL(18,2)")
                 .IsRequired();
 
             builder.Property(p => p.StockQuantity)
                 .HasColumnName("stock_quantity")
-                .HasColumnType("int")
+                .HasColumnType("INT")
                 .IsRequired();
 
             builder.Property(p => p.CreatedAt)
                 .HasColumnName("created_at")
-                .HasColumnType("datetime")
+                .HasColumnType("DATETIME")
                 .HasDefaultValueSql("GETDATE()")
                 .IsRequired();
 
