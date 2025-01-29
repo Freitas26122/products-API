@@ -1,0 +1,20 @@
+# Visual Studio
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+.vscode/
+*.vs/
+bin/
+obj/
+*.db
+*.sqlite
+*.dll
+*.exe
+*.pdb
+*.log
+*.cache
+
+# Outros
+*.iml
+*.json
