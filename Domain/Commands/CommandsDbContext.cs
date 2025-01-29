@@ -1,15 +1,18 @@
 using ProductsAPI.Domain.Utils;
 using Microsoft.EntityFrameworkCore;
+using ProductsAPI.Domain.Entities.Class;
+using ProductsAPI.Domain.Entities.Product;
 
 namespace ProductsAPI.Domain.Commands
 {
     public class CommandsDbContext(DbContextOptions<CommandsDbContext> options) : DbContext(options)
     {
+        public DbSet<ProductEntity> Product { get; set; }
         public List<LogChangedEntry> LogChangedEntries { get; set; } = new List<LogChangedEntry>();
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-           
+            builder.ApplyConfiguration(new ProductDbConfig());
         }
 
         public async Task<(bool CanConnect, string ErrorMessage)> TryConnectionAsync()
