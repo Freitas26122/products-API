@@ -2,6 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 using ProductsAPI.Domain.Commands;
 using ProductsAPI.Domain.Commands.Products;
 using ProductsAPI.Domain.Queries;
+using ProductsAPI.Domain.Queries.Products.GetAllProductsQuery;
+using ProductsAPI.Domain.Queries.Products.GetProductByIdQuery;
+using ProductsAPI.Domain.Queries.Products.GetProductsByNameQuery;
+using ProductsAPI.Domain.Utils;
 
 namespace ProductsAPI.Core.Controllers
 {
@@ -37,6 +41,24 @@ namespace ProductsAPI.Core.Controllers
         {
             var result = await _commandsHandler.Handle(cmd);
             return GetResult(result);
+        }
+
+        [HttpGet("management/product")]
+        public async Task<ActionResult<CommandResult>> GetAllProductsQuery([FromQuery] GetAllProductsQuery query)
+        {
+            return GetResult(await _queriesHandler.RunQuery(query));
+        }
+
+        [HttpGet("management/product/{ProductId}")]
+        public async Task<ActionResult<CommandResult>> GetProductByIdQuery([FromRoute] GetProductByIdQuery query)
+        {
+            return GetResult(await _queriesHandler.RunQuery(query));
+        }
+
+        [HttpGet("management/product/name/{ProductName}")]
+        public async Task<ActionResult<CommandResult>> GetProductByNameQuery([FromRoute] GetProductByNameQuery query)
+        {
+            return GetResult(await _queriesHandler.RunQuery(query));
         }
     }
 }

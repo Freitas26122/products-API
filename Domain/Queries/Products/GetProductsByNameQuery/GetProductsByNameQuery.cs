@@ -4,7 +4,7 @@ using ProductsAPI.Domain.Utils;
 
 namespace ProductsAPI.Domain.Queries.Products.GetProductsByNameQuery
 {
-    public class GetOrganizerByIdQuery : AbstractQuery<ProductViewModel>
+    public class GetProductByNameQuery : AbstractQuery<ProductViewModel>
     {
         public required string ProductName { get; set; }
         public override async Task<QueryResult<ProductViewModel>> ExecuteAsync(QueriesHandler queriesHandler)
