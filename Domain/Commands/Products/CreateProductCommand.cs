@@ -2,7 +2,7 @@ using ProductsAPI.Domain.Entities.Class;
 using ProductsAPI.Domain.Listeners;
 using ProductsAPI.Domain.Utils;
 
-namespace ProductsAPI.Domain.Commands.Classes
+namespace ProductsAPI.Domain.Commands.Products
 {
     public class CreateClassCommand : ICommand
     {
