@@ -11,12 +11,12 @@ namespace ProductsAPI.Core.Controllers
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
-    public class ClassesController : ControllerBaseHandler
+    public class ProductsController : ControllerBaseHandler
     {
         private readonly CommandsHandler _commandsHandler;
         private readonly QueriesHandler _queriesHandler;
 
-        public ClassesController(CommandsHandler commandsHandler, QueriesHandler queriesHandler)
+        public ProductsController(CommandsHandler commandsHandler, QueriesHandler queriesHandler)
         {
             _commandsHandler = commandsHandler;
             _queriesHandler = queriesHandler;
